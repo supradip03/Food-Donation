@@ -9,9 +9,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
+
 public class CustomUserDetails implements UserDetails {
 
     private final Users user;
+
     public CustomUserDetails(Users user) {
         this.user = user;
     }
@@ -54,4 +56,5 @@ public class CustomUserDetails implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
 }
